@@ -6,7 +6,7 @@ export function SocialCard() {
                     Fale comigo no WhatsApp
                 </h1>
                 <a
-                    href=""
+                    href="https://wa.me/5583981734329?text=Ola.%20Gostaria%20de%20marcar%20uma%20tatuagem."
                     className="border border-white p-2 text-center rounded-full"
                 >
                     Agora Mesmo
