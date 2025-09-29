@@ -1,16 +1,29 @@
 ---
-import { Profile } from '../components/Profile';
-import {OfferCard} from '../components/OfferCard';
-import {Gallery} from '../components/Gallery';
-import {SocialCard} from '../components/SocialCard';
-import {Footer} from '../components/Footer';
+import {Header} from "../components/Header";
+import {Line} from "../components/Line";
+import {Hero} from "../components/Hero";
+import {About} from "../components/About";
+import {Gallery} from "../components/Gallery";
+import {Contact} from "../components/Contact";
+import {Footer} from "../components/Footer";
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Profile />
-    <OfferCard />
+    <Header />
+    <Line />
+
+    <Hero />
+    <Line />
+
+    <About />
+    <Line />
+
     <Gallery />
-    <SocialCard />
+    <Line />
+
+    <Contact />
+    <Line />
+
     <Footer />
 </Layout>
