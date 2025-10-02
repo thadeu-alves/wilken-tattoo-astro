@@ -1,1 +1,14 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+:root {
+    --primary: #7f7f7f;
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.text-primary {
+    color: var(--primary);
+}

@@ -1,7 +1,7 @@
 export function GallerryRow({
     images,
 }: {
-    images: string[3];
+    images: string[];
 }) {
     return (
         <div className="grid grid-cols-2 grid-rows-1 gap-4 h-96 md:w-1/2">

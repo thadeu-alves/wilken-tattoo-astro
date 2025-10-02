@@ -1,10 +1,10 @@
 export function Hero() {
     return (
-        <div className="flex flex-col items-center px-8 py-18 gap-8">
-            <h1 className="font-serif text-4xl md:text-6xl">
+        <div className="flex flex-col items-center px-6 py-18 gap-8">
+            <h1 className="font-serif text-5xl md:text-6xl text-center">
                 WILKEN TATTOO
             </h1>
-            <h2 className="font-light">
+            <h2 className="font-light text-lg">
                 Estilo, Precisão e Confiança em Cada Traço
             </h2>
             <img

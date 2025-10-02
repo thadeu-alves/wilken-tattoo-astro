@@ -1,15 +1,22 @@
 export function About() {
     return (
-        <div className="px-8 py-18 flex flex-col gap-8 md:flex-row max-w-5xl mx-auto md:justify-between">
+        <div
+            className="px-6 py-18 flex flex-col gap-8 md:flex-row max-w-5xl mx-auto md:justify-between"
+            id="sobre"
+        >
             <div className="space-y-4 max-w-80 md:space-y-8">
                 <h1 className="font-bold text-2xl md:text-4xl">
                     SOBRE O ARTISTA
                 </h1>
-                <p className="font-light md:text-xl">
-                    Situado na cidade de Serra Grande, na
-                    Paraíba, com anos de experiência em
-                    desenho e uma nova caminhada no mundo da
-                    tatuagem.
+                <p className="font-light text-lg md:text-xl">
+                    Situado em Serra Grande, na Paraíba, o
+                    artista traz consigo uma herança
+                    cultural rica e anos de dedicação ao
+                    desenho tradicional. Agora, essa jornada
+                    artística ganha novas dimensões através
+                    da tatuagem, onde cada trabalho é uma
+                    fusão entre técnica apurada e
+                    sensibilidade local.
                 </p>
             </div>
             <img
