@@ -1,9 +1,17 @@
+import { useScroll } from "../hooks/useScroll";
 import { GallerryRow } from "./GallerryRow";
 
 export function Gallery() {
+    const { visible, elementRef } = useScroll({
+        threshold: 0.2,
+    });
+
     return (
         <section
-            className="px-6 py-18 space-y-8 max-w-5xl mx-auto"
+            ref={elementRef}
+            className={`px-6 py-18 space-y-8 max-w-5xl mx-auto ${
+                visible ? "animate-fade-up" : "opacity-0"
+            }`}
             id="galeria"
         >
             <div className="text-center space-y-4">
@@ -16,7 +24,13 @@ export function Gallery() {
                 </p>
             </div>
 
-            <div className="md:flex gap-8 space-y-4">
+            <div
+                className={`md:flex gap-8 space-y-4 ${
+                    visible
+                        ? "animate-fade-up animate-delay-[200ms]"
+                        : "opacity-0"
+                }`}
+            >
                 <GallerryRow
                     images={[
                         "./tattoos/tattoo6.jpeg",
@@ -32,7 +46,13 @@ export function Gallery() {
                     ]}
                 />
             </div>
-            <div className="md:flex gap-8 space-y-4">
+            <div
+                className={`md:flex gap-8 space-y-4 ${
+                    visible
+                        ? "animate-fade-up animate-delay-[400ms]"
+                        : "opacity-0"
+                }`}
+            >
                 <GallerryRow
                     images={[
                         "./tattoos/tattoo7.jpeg",

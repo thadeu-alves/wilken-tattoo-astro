@@ -1,7 +1,16 @@
+import { useScroll } from "../hooks/useScroll";
+
 export function Contact() {
+    const { visible, elementRef } = useScroll({
+        threshold: 0.2,
+    });
+
     return (
         <div
-            className="px-8 py-18 space-y-8 max-w-5xl mx-auto"
+            ref={elementRef}
+            className={`px-8 py-18 space-y-8 max-w-5xl mx-auto ${
+                visible ? "animate-fade-up" : "opacity-0"
+            }`}
             id="contato"
         >
             <h1 className="font-bold text-2xl md:text-4xl text-center">

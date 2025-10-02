@@ -1,6 +1,6 @@
 export function Hero() {
     return (
-        <div className="flex flex-col items-center px-6 py-18 gap-8">
+        <div className="flex flex-col items-center px-6 py-18 gap-8 animate-fade-down">
             <h1 className="font-serif text-5xl md:text-6xl text-center">
                 WILKEN TATTOO
             </h1>

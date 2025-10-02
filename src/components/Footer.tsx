@@ -1,6 +1,6 @@
 export function Footer() {
     return (
-        <div className="max-w-5xl mx-auto py-18 px-8">
+        <div className="max-w-5xl mx-auto pt-12 pb-4 px-6">
             <div className="flex justify-between">
                 <p className="font-light text-xl md:text-2xl">
                     Developed by{" "}
@@ -16,10 +16,10 @@ export function Footer() {
                 </p>
             </div>
             <div className="flex justify-between select-none">
-                <h1 className="text-4xl font-bold md:text-8xl lg:text-9xl">
+                <h1 className="text-5xl font-bold md:text-8xl lg:text-9xl">
                     WILKEN
                 </h1>
-                <h1 className="text-4xl font-bold md:text-8xl lg:text-9xl">
+                <h1 className="text-5xl font-bold md:text-8xl lg:text-9xl">
                     TATTOO
                 </h1>
             </div>

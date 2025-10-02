@@ -1,7 +1,16 @@
+import { useScroll } from "../hooks/useScroll";
+
 export function About() {
+    const { visible, elementRef } = useScroll({
+        threshold: 0.2,
+    });
+
     return (
         <div
-            className="px-6 py-18 flex flex-col gap-8 md:flex-row max-w-5xl mx-auto md:justify-between"
+            ref={elementRef}
+            className={`px-6 py-18 flex flex-col gap-8 md:flex-row max-w-5xl mx-auto md:justify-between ${
+                visible ? "animate-fade-up" : "opacity-0"
+            }`}
             id="sobre"
         >
             <div className="space-y-4 max-w-80 md:space-y-8">
